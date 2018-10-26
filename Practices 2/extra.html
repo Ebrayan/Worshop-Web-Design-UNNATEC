@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina  2</title>
+	<meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/estilo12.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				var escondido = false;
+				$(".triangulo").css({background:"none", position:"absolute", top: "70px", left: "398px"});
+				$("#menu").css({background:" blue", position:"absolute", top: "88px", left: "398px"});
+				$("table").css({width:$("#menu").width()})
+				$("button").click(function () {
+					if (escondido) {
+						$("#menu, .triangulo").fadeIn("slow");
+						$("#menu, .triangulo").show();
+						escondido = false;
+
+					}else{
+						$("#menu, .triangulo").fadeTo("0.05");
+						$("#menu, .triangulo").hide();
+						escondido=true;
+				}
+				});
+			});
+		</script>
+
+</head>
+<body>
+<section class="triangulo" style="margin: auto;">
+</section>
+<div id="menu" style="width: 600px; height: 400px">
+	<table >
+		<thead>
+			<h5>Menu de Contenidos hecho en por mí en JQuery</h5>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Una Seccion</td>
+				<td>Una secion</td>
+				<td>Ottra sesion</td>
+			</tr>
+			<tr>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+			</tr>			
+			<tr>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+			</tr>			
+			<tr>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+				<td><a href="#">Una parte</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<button style="margin: auto; position: absolute; top: 50px; left: 400px;" >Hola</button>
+
+      
+</body>
+</html>

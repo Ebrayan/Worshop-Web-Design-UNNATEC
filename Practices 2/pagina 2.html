@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina  2</title>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/jquery-ui.css"/>
+        <link rel="stylesheet" href="CSS/estilo2.css"/>
+        <script   src="js/jquery-3.3.1.min.js"></script>      
+        <script   src="js/jquery-ui.js"></script>
+        <script>
+        	$(document).ready(function(){
+        		 $("#btnbuscar").mouseover(function(){
+                    $(this).animate({width :"200px"});
+                 });
+                 $("#btnbuscar").mouseout(function(){
+                    $(this).animate({width :"125px"});
+                 });
+                 $("#txtbuscar").focus(function(){
+           
+                    $(this).animate({width:"+=20px"});
+                   $(this).css({borderBottom:"3px solid black"});
+                 });
+                   $("#txtbuscar").focusout(function () {
+                                       $(this).animate({width:"-=20px"});
+       $(this).css({borderBottom:"1px solid gray"});
+                 });
+               
+        	});
+
+            $( function() {
+                   $("#btnbuscar").click(function () {
+                     $(this).effect("highlight");
+                 });
+            $( "#accordion" ).accordion();
+            $(".panels").click(function () {
+               $(this).effect("shake"); 
+            });
+            $("li#navs").click(function () {
+                $(this).effect("shake");
+            });
+
+            } );
+        </script>
+</head>
+<body>
+<header>
+    <section id="logo">
+        <img src="recursos/logo.png" width="200" height="200">
+    </section>
+    <section id="banner">
+        <input type="text" name="txtbuscar" id="txtbuscar" placeholder="Buscar" height="40" width="150">
+        <button id="btnbuscar">Buscar</button>
+    </section>
+</header>
+<nav>
+    <ul>
+        <li id="nave"><a href="#" id="navs"><img src="recursos/home.png" width="42" height="42" id="homelogo" alt="home" title="Ir a inicio"></a></li>
+        <li id="navs"><a href="#" id="navs">Algo</a></li>
+        <li id="navs"><a href="#" id="navs">Algo</a></li>
+        <li id="navs"><a href="#" id="navs">Algo</a></li>
+        <li id="navs"><a href="#" id="navs">Algo</a></li>
+    </ul>
+</nav>
+<main>
+    <aside id="left">  
+        <ul>
+            <li><a href="#"></a></li>
+        </ul>
+    </aside>
+    <article id="article">
+        <h1>Pruebas de JQuery y JQuery-ui</h1>
+        <div id="accordion">
+  <h3 id="accor">Imagenes </h3>
+  <div  class="pr">
+     
+     <section class="panels">
+        <h4>Click me --> Clickeame </h4>
+        <img src="recursos/logo.png" width="100" height="100">
+        <p><small> Prueba y practicas Prueba y practicas Prueba y practicasPruebaPrueba y practicasPrueba v Prueba y practicas</small></p>
+    </section>
+     <section class="panels">
+        <h4>Titulo Imagen</h4>
+        <img src="recursos/logo.png" width="100" height="100">
+        <p><small> Prueba y practicas Prueba y practicas Prueba y practicasPruebaPrueba y practicasPrueba v Prueba y practicas</small></p>
+    </section>
+  </div>
+  <h3  id="accor">Tabla de Usuario</h3>
+  <div class="pr">
+  <table width="450"  align="center" cellspacing="3px" cellpadding="3px" border="3px" bgcolor="white" >
+     <tr>
+       <th>Titulo</th>
+       <th>Titulo</th>
+       <th>Titulo</th>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+
+   </table>
+  </div>
+  <h3  id="accor">Nada Interesante</h3>
+  <div  class="pr">
+   <table width="450"  align="center" cellspacing="3px" cellpadding="3px" >
+     <tr>
+       <th>Titulo</th>
+       <th>Titulo</th>
+       <th>Titulo</th>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+
+   </table>
+  </div>
+  <h3  id="accor">Nada Interesante</h3>
+  <div class="pr" >
+   <table width="450"  align="center" cellspacing="3px" cellpadding="3px" border="2 solid black">
+     <tr>
+       <th>Titulo</th>
+       <th>Titulo</th>
+       <th>Titulo</th>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+     <tr>
+       <td>Celda</td>
+       <td>Celda</td>
+       <td>Celda</td>
+     </tr>
+
+   </table>
+     
+  </div>
+</div>
+    </article>
+</main>
+<footer>
+    <p> <a href="#" title="aun no existe :(">www.E-BrayanV.com</a> |Todos los derechos reservados</p>
+    <p>Desarollado por <strong>Elis Brayan Valdez Martinez</strong></p>
+</footer>
+ 
+</body>
+</html>
