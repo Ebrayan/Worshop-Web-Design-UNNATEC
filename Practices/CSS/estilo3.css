@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url("bac.jpg");
+	margin: auto;
+	width: 1010px;
+	height: 900px;
+}
+nav{
+	width: 1000px;
+	height: 100px;
+}
+header{
+	width: 1000px;
+	height: 300px;
+}
+main{
+	width: 1000px;
+	height: 500px;
+}
+footer{
+	width: 1000px;
+	height: 50px;
+	clear: both;
+	border: 1px solid gray;  
+}
+.box{
+	float: left;
+	width: 198px;
+	height: 100px;
+	background: blue;
+	border: 1px solid white;
+	text-align: center;	
+}
+#banner{
+	border: 2px solid black;
+	width: 800px;
+	height: 300px;
+	float: left;
+	background-image: url("imag1.png");
+
+}
+#logo{
+	height: 98px;
+	width: 200px;
+	margin:1px;
+	border: 2px solid black;
+	margin-left: 801px;
+}
+#login{
+	
+	height: 98px;
+	width: 200px;
+	margin:1px;
+	border: 2px solid black;
+	margin-left: 801px;
+}
+#form{
+	
+	height: 98px;
+	width: 200px;
+	margin:1px;
+	border: 2px solid black;
+	margin-left: 801px;
+}
+#derecha{
+	float: right;
+	width: 300px;
+	height: 500px;
+	margin-left: 1px;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+#izquierda{
+	float: left;
+	width: 200px;
+	height: 500px;
+	margin-right: 1px;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+#articulo{
+	width: 498px;
+	height: 498px;
+	margin: 1px;
+	margin-left: 201px;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+#menu{
+	position: absolute;
+	top: 112px;
+	background: red;
+	border: 1px solid white;
+	height: 300px;
+	width: 990px;
+	border-radius: 8px;
+
+}
+#triangulo{
+	position: absolute;
+	top: 103px;
+	left: 300px;
+	
+	border-bottom: 25px solid red;
+	border-top: 2px solid transparent;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	height:0;
+	width: 0px;
+	
+}

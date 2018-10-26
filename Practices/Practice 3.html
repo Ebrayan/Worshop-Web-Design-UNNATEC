@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea No. 3</title>
+	<link rel="stylesheet" type="text/css" href="CSS/estilo3.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		var cajaseleccionada;
+
+		$(document).ready(function () {
+			var menu = $('#menu');
+			var triangulo =$("#triangulo");
+			var cuadros = $(".box");
+			menu.hide();
+			triangulo.hide();
+			var menuestaescondido = false;
+			cuadros.click(function(){
+				if(menuestaescondido){
+					var selec =$(this).attr('id');
+					presentamenu(selec);
+					menuestaescondido=false;
+				}
+				else{
+					var este = $(this).attr('id');
+				//alert("este > "+este+ "   otro  >"+cajaseleccionada);
+					if (este==cajaseleccionada) {
+						escondemenu();
+					menuestaescondido=true;
+					}else{
+
+						presentamenu($(this).attr('id'));
+
+ 
+					}
+
+					
+				}
+				
+				});
+			
+
+			function escondemenu(){
+				menu.fadeOut();
+				triangulo.hide();
+				menu.hide();
+			}
+			function presentamenu(cli){
+
+				var idcaja =cli;
+				triangulo.fadeOut();
+				menu.fadeOut();
+				menu.fadeIn("fast");
+				triangulo.fadeIn();
+
+				switch(idcaja){
+
+					case "box1" :
+						cajaseleccionada = $("#box1").attr('id'); 
+						triangulo.animate({left:"300px"});
+						menu.css({background:"brown"});
+						triangulo.css({borderBottomColor:"brown"});
+						break;
+
+					case "box2" : 
+						cajaseleccionada = $("#box2").attr('id');
+						$("#triangulo").animate({left:"500px"});
+						menu.css({background:"violet"});
+						triangulo.css({borderBottomColor:"violet"});
+						break;
+					case "box3" : 
+						$("#triangulo").animate({left:"700px"});
+						cajaseleccionada = $("#box3").attr('id');
+						menu.css({background:"orange"});
+						triangulo.css({borderBottomColor:"orange"});
+						break;
+					case "box4" : 
+						cajaseleccionada = $("#box4").attr('id');
+						$("#triangulo").animate({left:"900px"});
+						menu.css({background:"yellow"});
+						triangulo.css({borderBottomColor:"yellow"});
+ 						break;
+					case "box5" : 
+						$("#triangulo").animate({left:"1100px"});
+						cajaseleccionada =$("#box5").attr('id');
+						menu.css({background:"green"});
+						triangulo.css({borderBottomColor:"green"});
+						break;
+
+
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<section class="box" id="box1">
+			<h1>Menu Marron</h1>
+		</section>
+		<section class="box" id="box2">
+			<h1>Menu Rosado</h1>
+
+		</section>
+		<section class="box" id="box3">
+			<h1>Menu Naranja</h1>
+		</section>
+		<section class="box" id="box4">
+			<h1>Menu Amariilo</h1>
+		</section>
+		<section class="box" id="box5">
+			<h1>Menu Verde</h1>
+		</section>
+		<div id="menu"></div>
+		<div id="triangulo"></div>
+	</nav>
+	<header>
+		<section id="banner"><h1>BANNER</h1></section>
+		<section id="logo"><h1>LOGO</h1></section>
+		<section id="login"><h1>LOGIN</h1></section>
+		<section id="form"><h1>FORMULARIO</h1></section>
+
+	</header>
+	<main>
+		<aside id="derecha"> <h1>ASIDE DE LA DERECHA</h1></aside>
+		<aside id="izquierda"><h1>ASIDE DE LA IZQUIERDA</h1></aside>
+		<article id="articulo"> <h1>ARTICULO</h1></article>
+	</main>
+	<footer></footer>
+	 
+
+</body>
+</html>
